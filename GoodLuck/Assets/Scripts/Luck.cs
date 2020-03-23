@@ -8,9 +8,12 @@ public class Luck : MonoBehaviour
     public int maxLuck;
     private int playerLuck;
 
+    public LuckBar luckbar;
+
     void Start()
     {
         playerLuck = maxLuck;
+        luckbar.SetMaxLuck(maxLuck);
     }
 
     IEnumerator addLuck()
@@ -27,6 +30,7 @@ public class Luck : MonoBehaviour
                 {
                     playerLuck += maxLuck - playerLuck;
                 }
+                luckbar.SetLuck(playerLuck);
             }
             yield return new WaitForSeconds(1);   
         }
@@ -35,6 +39,7 @@ public class Luck : MonoBehaviour
     public void reduceLuck()
     {
         playerLuck -= 25;
+        luckbar.SetLuck(playerLuck);
         if (playerLuck <= 0)
         {
             Scene s = SceneManager.GetActiveScene();
