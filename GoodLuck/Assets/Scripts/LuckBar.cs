@@ -5,12 +5,7 @@ using UnityEngine.UI;
 
 public class LuckBar : MonoBehaviour
 {
-    private Slider slider;
-
-    void Start()
-    {
-        slider = GetComponent<Slider>();
-    }
+    public Slider slider;
 
     public void SetMaxLuck(int luck)
     {

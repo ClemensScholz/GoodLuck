@@ -18,7 +18,6 @@ public class Reload : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("exit");
             EndReload(other);
         }
     }

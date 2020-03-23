@@ -10,8 +10,10 @@
           <e p="DamageTrigger.cs" t="Include" />
           <e p="EndCollider.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
           <e p="Luck.cs" t="Include" />
           <e p="LuckBar.cs" t="Include" />
+          <e p="Menu.cs" t="Include" />
           <e p="Reload.cs" t="Include" />
           <e p="Restart.cs" t="Include" />
         </e>
