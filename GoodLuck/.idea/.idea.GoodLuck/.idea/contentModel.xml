@@ -11,6 +11,8 @@
           <e p="EndCollider.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
+          <e p="LevelLoad.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="Luck.cs" t="Include" />
           <e p="LuckBar.cs" t="Include" />
           <e p="Menu.cs" t="Include" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class Controller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         extraJumps = maxJumps;
+
+        Cursor.visible = false;
     }
 
     void FixedUpdate()
@@ -66,6 +69,11 @@ public class Controller : MonoBehaviour
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
-        }    
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
