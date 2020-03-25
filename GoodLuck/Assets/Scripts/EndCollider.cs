@@ -10,5 +10,10 @@ public class EndCollider : MonoBehaviour
         {
             other.GetComponent<Enemy>().TurnAround();
         }
+
+        if (other.tag == "SpecialPlatform")
+        {
+            other.GetComponent<SpecialPlatforms>().TurnAround();
+        }
     }
 }

@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public int speed;
     private Rigidbody2D rb;
-    public int direction = -1;
+    private int direction = -1;
     private bool facingRight = true;
 
     void Start()

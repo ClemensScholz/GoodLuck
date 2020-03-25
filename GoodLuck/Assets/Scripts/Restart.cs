@@ -11,6 +11,9 @@ public class Restart : MonoBehaviour
         if (other.tag == "Player")
         {
             restartCurrent();   
+        } else if (other.tag == "SpecialPlatform")
+        {
+            Destroy(other);
         }
     }
 

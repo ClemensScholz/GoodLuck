@@ -18,6 +18,7 @@
           <e p="Menu.cs" t="Include" />
           <e p="Reload.cs" t="Include" />
           <e p="Restart.cs" t="Include" />
+          <e p="SpecialPlatforms.cs" t="Include" />
         </e>
       </e>
       <e p="GoodLuck.sln" t="IncludeFlat" />
